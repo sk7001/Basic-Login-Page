@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=1380&t=st=1707635672~exp=1707636272~hmac=7169e54156af74d975fe43afba5d6808b00f39952952c937c2f6f21f8c72ccec);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signup-box {
+  background-color: #00000050;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.signup-box h2 {
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #cccccc;
+  outline: none;
+}
+
+.user-box input:focus {
+  color: #cccccc;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #cccccc;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #6a6a6a;
+  font-size: 12px;
+}
+
+.signup-box button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffffc5;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-box button:hover {
+  background-color: #ffffff;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  outline: none;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.radio-group input[type="radio"]:checked {
+  background-color: #cccccc;
+}
+
+.radio-group input[type="radio"]:focus {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.radio-group label{
+  color: #cccccc;
+  padding-top: 5px;
+
+}
+
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+.signup-box a {
+    color: #6a6a6a;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;  
+}
+
+.signup-box a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
